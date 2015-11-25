@@ -29,3 +29,7 @@ img
   width: 100%;
   margin:auto;
 }
+.carousel-caption{
+  font-size: 2em;
+  text-shadow:1px 1px teal;
+}
