@@ -1,0 +1,35 @@
+
+body{
+
+}
+
+
+/*navbar*/
+.navbar {
+  background-color: darkred;
+  margin-bottom: -10px;
+}
+
+.navlink{
+  color: white;
+}
+.navlink:hover, 
+.navlinkwhite{
+  color: teal;
+}
+
+
+
+/*carousel*/
+img
+{
+  width: auto;
+  height: 100%;
+  max-height: 275px;
+  width: 100%;
+  margin:auto;
+}
+.carousel-caption{
+  font-size: 2em;
+  text-shadow:1px 1px teal;
+}
