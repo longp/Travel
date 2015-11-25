@@ -1,0 +1,18 @@
+
+body{
+
+}
+
+
+/*navbar*/
+.navbar {
+  background-color: darkred;
+}
+
+.navlink{
+  color: white;
+}
+.navlink:hover, 
+.navlinkwhite{
+  color: teal;
+}
