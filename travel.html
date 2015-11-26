@@ -110,10 +110,10 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <!--panel with date picker-->
 
-  <div class="container-fluid">
-    <div class="mainbox col-md-5 pull-left">
+  <!--panel with date picker-->
+  <div id="searchpanel" class="row">
+    <div class="mainbox col-md-4 pull-left">
       <div class="panel panel-info">
         <div class="panel-heading">
           <div class="panel-title">
@@ -131,7 +131,7 @@
             <input class="form-control" id="checkout" name="checkout" placeholder="Checkout Date" type="datetime-local">
           </div>
                       
-          <!--search panel-->
+          <!--search -->
           <form class="navbar-form" role="search">
             <input type="text" class="form-control" placeholder="Search City">
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
@@ -139,7 +139,9 @@
         </div>        
       </div>
     </div>
-    <div class="main col-md-7">
+
+    <!--body-->
+    <div class="main col-md-8">
       <h2>Hotel Results</h2>
     </div>
     <!-- Button trigger modal -->
