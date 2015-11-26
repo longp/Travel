@@ -3,13 +3,10 @@ $(document).ready(function(){
   //carousel interval
   $('.carousel').carousel({
   interval: 3000
-})
+  })
 
-  
-
-
-//date picker
-$(function() {
+  //date picker
+  $(function() {
     var today = new Date();
     
     $('#from-datepicker').datetimepicker({
@@ -19,15 +16,6 @@ $(function() {
     
      $('#to-datepicker').datetimepicker({
       language: 'pt-BR'
-    });
-    
-});
-
-
-
-
-
-
-
-
+    });     
+  });
 });
