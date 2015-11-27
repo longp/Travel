@@ -34,6 +34,13 @@ img
   text-shadow:1px 1px teal;
 }
 
+.carousel{
+  margin-top: 10px;
+}
+
+
+
+/*footer*/
 footer {
   position:fixed;
   background-color: darkred;

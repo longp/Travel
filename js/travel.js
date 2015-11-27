@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   //carousel interval
   $('.carousel').carousel({
+
   interval: 3000
   })
 
@@ -19,8 +20,8 @@ $(document).ready(function(){
     });     
   });
 
-  $("input").on('click', function() {
-    alert("ye");
+  // $("input").on('click', function() {
+  //   alert("ye");
     // var text = $(this).html();
     // $(".dropdown-menu ul li").html(text);
     // $(".dropdown-menu").hide();
