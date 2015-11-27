@@ -47,6 +47,12 @@ img
   left:14px;
 }
 
+/*main*/
+.main h2 {
+  text-align: center;
+  color: darkred;
+}
+
 /*footer*/
 footer {
   position:fixed;

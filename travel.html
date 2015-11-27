@@ -137,20 +137,19 @@
             <input type="text" class="form-control" placeholder="Search City">
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
           </form> --> 
-          <div class="dropdown">
-            <form class="navbar-form dropdown" role="search">
-              <input type="text" class="form-control dropdown-toggle" placeholder="Search City" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                <li>Paris</li>
-                <li>London</li>
-                <li>Tokyo</li>
-                <li>Hong Kong</li>
-                <li>New York City</li>
-              </ul>
-              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-            </form>
-          </div>
+          
+          <form class="navbar-form dropdown" role="search">
+            <input type="text" class="form-control dropdown-toggle" placeholder="Search City" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li>Paris</li>
+              <li>London</li>
+              <li>Tokyo</li>
+              <li>Hong Kong</li>
+              <li>New York City</li>
+            </ul>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </form>
         </div>        
       </div>
     </div>
@@ -159,30 +158,37 @@
     <!--body-->
     <div class="main col-md-8">
       <h2>Hotel Results</h2>
-    </div>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      More Info
-    </button>
+      <div class="listing col-md-9">
+        <h3>Hotel Name</h3>
+        <p>Basic Listing Information</p>
+      </div>
+      <div class="price col-md-2">$$$
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal">
+        More Info
+      </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
   <!--10 hotels, random cities-->
 
