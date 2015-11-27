@@ -18,4 +18,11 @@ $(document).ready(function(){
       language: 'pt-BR'
     });     
   });
+
+  $("input").on('click', function() {
+    alert("ye");
+    // var text = $(this).html();
+    // $(".dropdown-menu ul li").html(text);
+    // $(".dropdown-menu").hide();
+  });
 });
