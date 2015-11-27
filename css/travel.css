@@ -20,6 +20,7 @@ body{
 
 
 
+
 /*carousel*/
 img
 {
@@ -38,6 +39,10 @@ img
   margin-top: 10px;
 }
 
+/*body*/
+td {
+  height: 200px;
+}
 
 
 /*footer*/
