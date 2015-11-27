@@ -7,18 +7,18 @@ $(document).ready(function(){
   })
 
   //date picker
-  $(function() {
-    var today = new Date();
+  // $(function() {
+  //   var today = new Date();
     
-    $('#from-datepicker').datetimepicker({
-      language: 'pt-BR',
-      startDate: today
-    });
+  //   $('#from-datepicker').datetimepicker({
+  //     language: 'pt-BR',
+  //     startDate: today
+  //   });
     
-     $('#to-datepicker').datetimepicker({
-      language: 'pt-BR'
-    });     
-  });
+  //    $('#to-datepicker').datetimepicker({
+  //     language: 'pt-BR'
+  //   });     
+  // });
 
   // $("input").on('click', function() {
   //   alert("ye");
