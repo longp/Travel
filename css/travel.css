@@ -43,7 +43,10 @@ img
 #searchpanel{
   margin
 }
-
+.dropdwon-menu {
+  top:inherit;
+  left:45px;
+}
 
 /*footer*/
 footer {

@@ -5,6 +5,8 @@ $(document).ready(function(){
 
   interval: 3000
   })
-
+  
+  debugger;
+  $("#yourdropdownid").children("option").filter(":selected").text()
 
 });
