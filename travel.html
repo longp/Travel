@@ -158,37 +158,41 @@
     <!--body-->
     <div class="main col-md-8">
       <h2>Hotel Results</h2>
-      <div class="listing col-md-9">
-        <h3>Hotel Name</h3>
-        <p>Basic Listing Information</p>
-      </div>
-      <div class="price col-md-2">$$$
-      </div>
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal">
-        More Info
-      </button>
+      <section class="hotels">
+        <div class="listing">
+          <div class="col-md-9">
+            <h3>Hotel Name</h3>
+            <p>Basic Listing Information</p>
+            <p>Amenities:</p>
+          </div>
+          <div class="price col-md-2">$$$
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal">
+            More Info
+          </button>
 
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Hotel Name</h4>
+                </div>
+                <div class="modal-body">
+                  ...More detailed hotel and city info
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Hide Listing</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>  
+      </section>
     </div>
-
   </div>
   <!--10 hotels, random cities-->
 
