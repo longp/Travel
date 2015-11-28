@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".btngroup").hide();
+  $(".btn-group").hide();
 
   //carousel interval
   $('.carousel').carousel({
@@ -32,6 +32,6 @@ $(document).ready(function(){
   });
 
   $("#moreOptions").on("click", function(){
-    $(".btngroup").fadeToggle();
+    $(".btn-group").fadeToggle();
   })
 });
