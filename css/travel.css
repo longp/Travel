@@ -20,6 +20,7 @@ body{
 
 
 
+
 /*carousel*/
 img
 {
@@ -38,15 +39,25 @@ img
   margin-top: 10px;
 }
 
+/*body*/
+td {
+  height: 100px;
+}
 
 /*search panel*/
-#searchpanel{
-  margin
+.panel {
+  padding-bottom: 200px;
 }
 
 .dropdown-menu{
   left:14px;
 }
+
+#searchbar {
+  margin-top: 75px;
+}
+
+/*panel*/
 
 /*main*/
 .main h2 {
@@ -62,7 +73,11 @@ img
   overflow: hidden;
 }
 
+
 /*footer*/
+.dropdown-menu{
+  left:14px;
+}
 footer {
   position:fixed;
   background-color: darkred;
