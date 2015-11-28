@@ -48,6 +48,9 @@ td {
 .panel {
   padding-bottom: 200px;
 }
+.panel-body {
+  padding-bottom: 0;
+}
 
 .dropdown-menu{
   left:14px;
