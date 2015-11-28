@@ -1,0 +1,87 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leap Longstep Travel</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/travel.css">
+</head>
+<body>
+  
+  <!--panel with date picker-->
+  <div id="searchpanel" class="row">
+    <div class="mainbox col-md-4 pull-left">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="panel-title">
+            Search for places to go
+          </div>
+        </div>
+
+        <div class="panel-body">
+          <div class="col-md-6">
+            <span>Check In</span>
+            <input class="form-control" id="checkin" name="checkin" placeholder="Checkin Date" type="datetime-local">
+          </div>
+          <div class="col-md-6">
+            <span>Check Out</span>
+            <input class="form-control" id="checkout" name="checkout" placeholder="Checkout Date" type="datetime-local">
+          </div>                   
+         
+          <form class="navbar-form dropdown col-md-6" role="search">
+            <input type="text" class="form-control dropdown-toggle" placeholder="Search City" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">          
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li>Paris</li>
+              <li>London</li>
+              <li>Tokyo</li>
+              <li>Hong Kong</li>
+              <li>New York City</li>
+            </ul>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </form>          
+        </div> 
+        <div class="col-xs-12">
+          <a href="#" id="moreOptions" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Advanced
+            <span class="caret"></span>
+          </a> 
+           <br>
+          <div class="btngroup">
+            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Star Ratings<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>Any Stars</li>
+              <li>2 stars and Up</li>
+              <li>3 stars and Up</li>
+              <li>4 stars and Up</li>  
+            </ul><button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Price Range<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>Any Price Range</li>
+              <li>$0-$75</li>
+              <li>$75-150</li>
+              <li>$150 and Above</li>
+            </ul><button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Amenities<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--10 hotels, random cities-->
+    
+  <footer>
+    <p>© 2015</p>
+  </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/travel.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body></html>
