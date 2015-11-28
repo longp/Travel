@@ -41,16 +41,28 @@ img
 
 /*body*/
 td {
-  height: 200px;
+  height: 100px;
+}
+
+/*search panel*/
+.panel {
+  padding-bottom: 200px;
+}
+#searchbar {
+  margin-top: 75px;
 }
 
 
 /*footer*/
+.dropdown-menu{
+  left:14px;
+}
 footer {
   position:fixed;
+  background-color: darkred;
+  color: white;
   left:0px;
   bottom:0px;
   height:30px;
   width:100%;
-  background:#999;
 }
