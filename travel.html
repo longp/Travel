@@ -109,18 +109,10 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-
-</div>
-  
-<!--panel with date picker-->
-<div class="container-fluid">
-  <div class="row">
-
   </div>
 
   <!--panel with date picker-->
   <div id="searchpanel" class="row">
-
     <div class="mainbox col-md-4 pull-left">
       <div class="panel panel-info">
         <div class="panel-heading">
@@ -128,208 +120,76 @@
             Search for places to go
           </div>
         </div>
-          <div class="panel-body row">
-            <div class="col-md-6">
-              <span>Check In</span>
-              <input class="form-control" id="checkin" name="checkin" placeholder="Checkin Date" type="datetime-local">
-            </div>
-            <div class="col-md-6">
-              <SPAN>Check Out</SPAN>
-              <input class="form-control" id="checkout" name="checkout" placeholder="Checkout Date" type="datetime-local">
-            </div>
+
+        <div class="panel-body">
+          <div class="col-md-6">
+            <span>Check In</span>
+            <input class="form-control" id="checkin" name="checkin" placeholder="Checkin Date" type="datetime-local">
           </div>
-          <div class="row" id="searchbar">      
-            <div class="search col-md-9">
-              <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search"/>
-            </div>
-            <div class="search col-md-3">
-              <button type="submit" class="btn btn-primary btn-sm">Search</button>
-            </div>
-          </div>
-        </div>        
+          <div class="col-md-6">
+            <span>Check Out</span>
+            <input class="form-control" id="checkout" name="checkout" placeholder="Checkout Date" type="datetime-local">
+          </div>                   
+         
+          <form class="navbar-form dropdown col-md-12" role="search">
+            <input type="text" class="form-control dropdown-toggle" placeholder="Search City" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li>Paris</li>
+              <li>London</li>
+              <li>Tokyo</li>
+              <li>Hong Kong</li>
+              <li>New York City</li>
+            </ul>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </form>     
+        </div> 
       </div>
-
-    
-
-
-<!--body-->
-    <div class="col-md-8" id="bodydiv">
-        <table class="table table-bordered table-striped">
-            <tbody>
-                <tr>
-                    <th class="text-center">Search Results</th>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="btn btn-primary btn-lg" data-target=
-                        "#myModal" data-toggle="modal" type="button">More
-                        Info</button> <!-- Modal -->
-                        <div aria-labelledby="myModalLabel" class="modal fade"
-                        id="myModal" role="dialog" tabindex="-1">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button aria-label="Close" class=
-                                        "close" data-dismiss="modal" type=
-                                        "button"><span aria-hidden=
-                                        "true">&times;</span></button>
-                                        <h4 class="modal-title" id=
-                                        "myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-default"
-                                        data-dismiss="modal" type=
-                                        "button">Close</button> <button class=
-                                        "btn btn-primary" type="button">Save
-                                        changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="btn btn-primary btn-lg" data-target=
-                        "#myModal" data-toggle="modal" type="button">More
-                        Info</button> <!-- Modal -->
-                        <div aria-labelledby="myModalLabel" class="modal fade"
-                        id="myModal" role="dialog" tabindex="-1">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button aria-label="Close" class=
-                                        "close" data-dismiss="modal" type=
-                                        "button"><span aria-hidden=
-                                        "true">&times;</span></button>
-                                        <h4 class="modal-title" id=
-                                        "myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-default"
-                                        data-dismiss="modal" type=
-                                        "button">Close</button> <button class=
-                                        "btn btn-primary" type="button">Save
-                                        changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="btn btn-primary btn-lg" data-target=
-                        "#myModal" data-toggle="modal" type="button">More
-                        Info</button> <!-- Modal -->
-                        <div aria-labelledby="myModalLabel" class="modal fade"
-                        id="myModal" role="dialog" tabindex="-1">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button aria-label="Close" class=
-                                        "close" data-dismiss="modal" type=
-                                        "button"><span aria-hidden=
-                                        "true">&times;</span></button>
-                                        <h4 class="modal-title" id=
-                                        "myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-default"
-                                        data-dismiss="modal" type=
-                                        "button">Close</button> <button class=
-                                        "btn btn-primary" type="button">Save
-                                        changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="btn btn-primary btn-lg" data-target=
-                        "#myModal" data-toggle="modal" type="button">More
-                        Info</button> <!-- Modal -->
-                        <div aria-labelledby="myModalLabel" class="modal fade"
-                        id="myModal" role="dialog" tabindex="-1">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button aria-label="Close" class=
-                                        "close" data-dismiss="modal" type=
-                                        "button"><span aria-hidden=
-                                        "true">&times;</span></button>
-                                        <h4 class="modal-title" id=
-                                        "myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-default"
-                                        data-dismiss="modal" type=
-                                        "button">Close</button> <button class=
-                                        "btn btn-primary" type="button">Save
-                                        changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="btn btn-primary btn-lg" data-target=
-                        "#myModal" data-toggle="modal" type="button">More
-                        Info</button> <!-- Modal -->
-                        <div aria-labelledby="myModalLabel" class="modal fade"
-                        id="myModal" role="dialog" tabindex="-1">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button aria-label="Close" class=
-                                        "close" data-dismiss="modal" type=
-                                        "button"><span aria-hidden=
-                                        "true">&times;</span></button>
-                                        <h4 class="modal-title" id=
-                                        "myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-default"
-                                        data-dismiss="modal" type=
-                                        "button">Close</button> <button class=
-                                        "btn btn-primary" type="button">Save
-                                        changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 
+    <!--body-->
+    <div class="main col-md-8">
+      <h2>Hotel Results</h2>
+      <section class="hotels">
+        <div class="listing">
+          <div class="col-md-9">
+            <h3>Hotel Name</h3>
+            <p>Basic Listing Information</p>
+            <p>Amenities:</p>
+          </div>
+          <div class="price col-md-2">$$$
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal">
+            More Info
+          </button>
 
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Hotel Name</h4>
+                </div>
+                <div class="modal-body">
+                  ...More detailed hotel and city info
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Hide Listing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+    </div>
   </div>
-</div>
-
+  <!--10 hotels, random cities-->
 
   <footer>
-    <p>Copyright 2015</p>
+    <p>&copy 2015</p>
   </footer>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

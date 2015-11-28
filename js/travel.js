@@ -32,18 +32,18 @@ $("#searchbtn").on("click", function(){
   })
 
   //date picker
-  $(function() {
-    var today = new Date();
+  // $(function() {
+  //   var today = new Date();
     
-    $('#from-datepicker').datetimepicker({
-      language: 'pt-BR',
-      startDate: today
-    });
+  //   $('#from-datepicker').datetimepicker({
+  //     language: 'pt-BR',
+  //     startDate: today
+  //   });
     
-     $('#to-datepicker').datetimepicker({
-      language: 'pt-BR'
-    });     
-  });
+  //    $('#to-datepicker').datetimepicker({
+  //     language: 'pt-BR'
+  //   });     
+  // });
 
   // $("input").on('click', function() {
   //   alert("ye");
@@ -51,5 +51,12 @@ $("#searchbtn").on("click", function(){
     // $(".dropdown-menu ul li").html(text);
     // $(".dropdown-menu").hide();
   // });
+<<<<<<< HEAD
 >>>>>>> 895280fb0d97f248e785017bc31ce70fcd149bbf
+=======
+  $(".modal-footer .btn-primary").on("click", function(){
+    $(this).parents("div.listing").hide();
+    $('#myModal').modal('hide')
+  });
+>>>>>>> master
 });
