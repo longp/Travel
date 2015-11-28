@@ -43,14 +43,32 @@ img
 #searchpanel{
   margin
 }
+.dropdown-menu{
+  left:14px;
+}
 
+/*main*/
+.main h2 {
+  text-decoration: underline;
+  text-align: center;
+  color: darkred;
+}
+
+.main h3 {
+  margin-top: 0;
+}
+.hotels, .listing {
+  overflow: hidden;
+}
 
 /*footer*/
 footer {
   position:fixed;
+  background-color: darkred;
+  color: white;
+  margin-top: 5px;
   left:0px;
   bottom:0px;
   height:30px;
   width:100%;
-  background:#999;
 }
