@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $(".btn-group").hide();
 
   //carousel interval
@@ -26,8 +27,8 @@ $(document).ready(function(){
     // $(".dropdown-menu").hide();
   // });
 
-  $(".modal-footer .btn-primary").on("click", function(){
-    // debugger;
+  // debugger;
+  $(document).on("click",".modal-footer .btn-primary", function(){
     $(this).parents("div.listing").hide();
     $('#myModal').modal('hide')
   });
