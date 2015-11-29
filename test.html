@@ -1,0 +1,110 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leap Longstep Travel</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/travel.css">
+</head>
+<body>
+  
+  <!--panel with date picker-->
+  <div id="searchpanel" class="row">
+    <div class="mainbox col-md-4 pull-left">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="panel-title">
+            Search for places to go
+          </div>
+        </div>
+
+        <div class="panel-body">
+          <div class="col-md-6">
+            <span>Check In</span>
+            <input class="form-control" id="checkin" name="checkin" placeholder="Checkin Date" type="datetime-local">
+          </div>
+          <div class="col-md-6">
+            <span>Check Out</span>
+            <input class="form-control" id="checkout" name="checkout" placeholder="Checkout Date" type="datetime-local">
+          </div>                   
+         
+          <form class="navbar-form dropdown col-md-6" role="search">
+            <input type="text" class="form-control dropdown-toggle" placeholder="Search City" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">          
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li>Paris</li>
+              <li>London</li>
+              <li>Tokyo</li>
+              <li>Hong Kong</li>
+              <li>New York City</li>
+            </ul>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </form>          
+        </div> 
+        <div class="col-xs-12">
+          <a href="#" id="moreOptions" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Advanced Search Options
+            <span class="caret"></span>
+          </a> 
+           <br>
+
+          <div>
+            <div class="btn-group">
+              <div class="btn btn-group btn-lg">                
+                <select>
+                  <option value="stars">Stars</option>                  
+                  <option value="star2">2 stars and Up</option>
+                  <option value="star3">3 stars and Up</option>
+                  <option value="star4">4 stars and Up</option>         
+                </select>
+              </div>
+
+              <div class="btn btn-group btn-lg">             
+                <select>
+                  <option value="price">Price</option>                  
+                  <option value="price2">$0-$75</option>
+                  <option value="price3">$75-150</option>
+                  <option value="price4">$150 and Up</option>        
+                </select>
+              </div>
+              
+              <!-- <div class="btn btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Amenities <span class="caret"></span></button>
+                
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Free breakfast</a></li>
+                  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Pool</a></li>
+                  <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Free Parking</a></li>
+                  <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Free Wifi</a></li>
+                  <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Laundry Service</a></li>
+                  <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Spa</a></li>
+                </ul>
+              </div> -->
+              <div class="btn btn-group">
+                <button type="button" class="btn btn-default btn-sm dropdown-toggle" id="amenitites" data-toggle="dropdown">Amenities <span class="caret"></span></button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Free breakfast</a></li>
+                  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Pool</a></li>
+                  <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Free Parking</a></li>
+                  <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Free Wifi</a></li>
+                  <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Laundry Service</a></li>
+                  <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Spa</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--10 hotels, random cities-->
+    
+  <footer>
+    <p>© 2015</p>
+  </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/travel.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body></html>
