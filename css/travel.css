@@ -60,6 +60,14 @@ td {
   margin-top: 75px;
 }
 
+.btn-lg {
+  padding: 10px;
+}
+
+#amenities {
+  border-radius: 10px;
+}
+
 /*panel*/
 
 /*main*/
@@ -80,7 +88,7 @@ td {
     border-bottom: 1px darkred solid;
 }
 
-#moreOptions, .btn-group {
+#moreOptions {
   padding: 0;
   padding-left: 20px;
 }

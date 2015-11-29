@@ -27,6 +27,7 @@ $(document).ready(function(){
   // });
 
   $(".modal-footer .btn-primary").on("click", function(){
+    // debugger;
     $(this).parents("div.listing").hide();
     $('#myModal').modal('hide')
   });
