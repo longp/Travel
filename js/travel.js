@@ -35,10 +35,10 @@ $(document).ready(function(){
   // debugger;
   $(document).on("click",".modal-footer .btn-primary", function(){
     $(this).parents("div.listing").hide();
-    $('#myModal').modal('hide')
+    $('.modal').modal('hide')
   });
 
-
+  //show advanced search option buttons
   $("#moreOptions").on("click", function(){
     $(".btn-group").fadeToggle();
   });
