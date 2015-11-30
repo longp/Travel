@@ -37,6 +37,13 @@ $(document).ready(function(){
     // $(".dropdown-menu").hide();
   // });
 
+  $('.selectpicker').selectpicker();
+
+  $('.selectpicker').selectpicker({
+      style: 'btn-info',
+      size: 4
+  });
+
   // debugger;
   $(document).on("click",".modal-footer .btn-primary", function(){
     $(this).parents("div.listing").hide();
