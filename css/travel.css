@@ -10,11 +10,11 @@ body{
   margin-bottom: -10px;
 }
 
-.navlink{
+.navlink, .navbar-default .navbar-nav>li>a {
   color: white;
 }
-.navlink:hover, 
-.navlinkwhite{
+
+.navlink:hover, .navlinkwhite{
   color: teal;
 }
 
