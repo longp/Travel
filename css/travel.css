@@ -89,6 +89,10 @@ td {
   border-bottom: 1px darkred solid;
 }
 
+.listing:last-child {
+  border-bottom: none;
+}
+
 #moreOptions {
   padding: 0;
   padding-left: 20px;
