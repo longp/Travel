@@ -2,12 +2,17 @@ $(document).ready(function(){
 
   $(".btn-group").hide();
 
+  //enable popovers
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  });
+  
   //carousel interval
   $('.carousel').carousel({
 
   interval: 3000
 
-});
+  });
 
 
 
