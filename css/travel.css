@@ -85,7 +85,8 @@ td {
 }
 
 .listing {
-    border-bottom: 1px darkred solid;
+  padding-top: 10px;
+  border-bottom: 1px darkred solid;
 }
 
 #moreOptions {
