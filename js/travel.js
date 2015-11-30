@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $(".btn-group").hide();
+  $(".btn-group2").hide();
 
   //enable popovers
   $(function () {
@@ -52,7 +52,7 @@ $(document).ready(function(){
 
   //show advanced search option buttons
   $("#moreOptions").on("click", function(){
-    $(".btn-group").fadeToggle();
+    $(".btn-group2").fadeToggle();
   });
 
 });
