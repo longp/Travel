@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
   $(".btn-group2").hide();
-  $(".hotels").hide();
+  $(".listing").hide();
+  $(".alert").hide();
 
   //enable popovers
   $(function () {
@@ -18,10 +19,24 @@ $(document).ready(function(){
 
 //show search results 
   //not working
+  
 $("#btnsearch").on("click", function(e){
   e.preventDefault();
-  var city = $("#city").val;
-  console.log(city);
+  var city = $("#city").val();
+  if (city === ""){
+    $(".alert").show();
+    return;
+  } else if (city === "London"){
+    $(".listing.ld").show();
+  }else if (city === "Paris"){
+    $(".listing.pa").show();
+  }else if (city === "Tokyo"){
+    $(".listing.tk").show();
+  }else if (city === "New York City"){
+    $(".listing.ny").show();
+  }else if (city === "Hong Kong"){
+    $(".listing.hk").show();
+  }
 });
 
   //amenity result
@@ -50,7 +65,7 @@ $("#btnsearch").on("click", function(e){
       var spa = "Spa";
       $(".amenities").append(spa + ", ");
     });
-  }
+  };
 
 
   $('.selectpicker').selectpicker();
