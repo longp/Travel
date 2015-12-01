@@ -18,6 +18,7 @@ $(document).ready(function(){
   
 $("#btnsearch").on("click", function(e){
   e.preventDefault();
+  amenResult();
   var city = $("#city").val();
   if (city === ""){
     $(".alert").show();
