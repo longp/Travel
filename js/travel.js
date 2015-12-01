@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   $(".btn-group2").hide();
+  $("#bodydiv").hide();
 
   //enable popovers
   $(function () {
@@ -24,10 +25,8 @@ $(document).ready(function(){
 
 
   $("#searchbtn").on("click", function(){
-    alert("hi");
-    $('#bodydiv').removeAttr(hidden);
-
-
+    debugger;
+    $('#bodydiv').show();
   });
 
   // $("input").on('click', function() {
