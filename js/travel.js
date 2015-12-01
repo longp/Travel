@@ -27,6 +27,7 @@ $("btnsearch").on("click", function(){
 
 
 
+
   //amenity result
   function amenResult () {
   $("#op1").one("click", function(){
@@ -58,6 +59,7 @@ $("btnsearch").on("click", function(){
 
 
   
+
 
   // $("input").on('click', function() {
   //   alert("ye");
