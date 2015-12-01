@@ -11,14 +11,10 @@ $(document).ready(function(){
   
   //carousel interval
   $('.carousel').carousel({
-
-  interval: 3000
-
+    interval: 3000
   });
- 
 
 //show search results 
-  //not working
   
 $("#btnsearch").on("click", function(e){
   e.preventDefault();
