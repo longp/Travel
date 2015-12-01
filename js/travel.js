@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-
   $(".btn-group2").hide();
+  $(".hotels").hide();
 
   //enable popovers
   $(function () {
@@ -14,59 +14,44 @@ $(document).ready(function(){
   interval: 3000
 
   });
-
-
-
-  
+ 
 
 //show search results 
   //not working
-$("btnsearch").on("click", function(){
-  alert("hi");
+$("#btnsearch").on("click", function(e){
+  e.preventDefault();
+  var city = $("#city").val;
+  console.log(city);
 });
-
-
-
 
   //amenity result
   function amenResult () {
-  $("#op1").one("click", function(){
-    var freebf = "Free Breakfast";
-    $(".amenities").append(freebf + ", ");
-  });
-  $("#op2").one("click", function(){
-    var pool = "Pool";
-    $(".amenities").append(pool + ", ");
-  });
-  $("#op3").one("click", function(){
-    var freepark = "Free Parking";
-    $(".amenities").append(freepark + ", ");
-  });
-  $("#op4").one("click", function(){
-    var freewifi = "Free Wifi";
-    $(".amenities").append(freewifi + ", ");
-  });
-  $("#op5").one("click", function(){
-    var laundry = "Laundry";
-    $(".amenities").append(laundry + ", ");
-  });
-  $("#op6").one("click", function(){
-    var spa = "Spa";
-    $(".amenities").append(spa + ", ");
-  });
-}
+    $("#op1").one("click", function(){
+      var freebf = "Free Breakfast";
+      $(".amenities").append(freebf + ", ");
+    });
+    $("#op2").one("click", function(){
+      var pool = "Pool";
+      $(".amenities").append(pool + ", ");
+    });
+    $("#op3").one("click", function(){
+      var freepark = "Free Parking";
+      $(".amenities").append(freepark + ", ");
+    });
+    $("#op4").one("click", function(){
+      var freewifi = "Free Wifi";
+      $(".amenities").append(freewifi + ", ");
+    });
+    $("#op5").one("click", function(){
+      var laundry = "Laundry";
+      $(".amenities").append(laundry + ", ");
+    });
+    $("#op6").one("click", function(){
+      var spa = "Spa";
+      $(".amenities").append(spa + ", ");
+    });
+  }
 
-
-
-  
-
-
-  // $("input").on('click', function() {
-  //   alert("ye");
-    // var text = $(this).html();
-    // $(".dropdown-menu ul li").html(text);
-    // $(".dropdown-menu").hide();
-  // });
 
   $('.selectpicker').selectpicker();
 
