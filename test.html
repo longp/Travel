@@ -1,17 +1,18 @@
-<html><head>
+<html>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Leap Longstep Travel</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
   <link rel="stylesheet" type="text/css" href="css/travel.css">
 </head>
 <body>
-  
   <!--panel with date picker-->
-  <div id="searchpanel" class="row">
-    <div class="mainbox col-md-4 pull-left">
+  <div id="searchPanel" class="row">
+    <div class="mainbox col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4 pull-left">
       <div class="panel panel-info">
         <div class="panel-heading">
           <div class="panel-title">
@@ -30,29 +31,26 @@
           </div>                   
          
           <form class="navbar-form dropdown col-md-6" role="search">
-            <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="cities" data-toggle="dropdown">Search City </span></button>
-        
-            <ul class="dropdown-menu">
-                  <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="radio"/>&nbsp;Free breakfast</a></li>
-                  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="radio"/>&nbsp;Pool</a></li>
-                  <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="radio"/>&nbsp;Free Parking</a></li>
-                  <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="radio"/>&nbsp;Free Wifi</a></li>
-                  <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="radio"/>&nbsp;Laundry Service</a></li>
-                  
-                </ul>
+            <select class="selectpicker" data-live-search="true" title="Search City">
+              <option>Paris </option>
+              <option>London</option>
+              <option>Tokyo</option>
+              <option>Hong Kong</option>
+              <option>New York City</option>
+            </select>
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
           </form>          
         </div> 
-        <div class="col-xs-12">
+        <div class="">
           <a href="#" id="moreOptions" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               Advanced Search Options
             <span class="caret"></span>
           </a> 
-           <br>
+           <!-- <br> -->
 
-          <div>
-            <div class="btn-group">
-              <div class="btn btn-group btn-lg">                
+         <div>
+            <div class="btn-group2">
+              <div class="btn btn-group2 btn-lg">                
                 <select>
                   <option value="stars">Stars</option>                  
                   <option value="star2">2 stars and Up</option>
@@ -61,7 +59,7 @@
                 </select>
               </div>
 
-              <div class="btn btn-group btn-lg">             
+              <div class="btn btn-group2 btn-lg">             
                 <select>
                   <option value="price">Price</option>                  
                   <option value="price2">$0-$75</option>
@@ -74,12 +72,12 @@
                 <button type="button" class="btn btn-default btn-sm dropdown-toggle" id="amenitites" data-toggle="dropdown">Amenities <span class="caret"></span></button>
 
                 <ul class="dropdown-menu">
-                  <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Free breakfast</a></li>
-                  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Pool</a></li>
-                  <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Free Parking</a></li>
-                  <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Free Wifi</a></li>
-                  <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Laundry Service</a></li>
-                  <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Spa</a></li>
+                  <li><a href="#" class="small" data-value="option1" tabindex="-1"><input type="checkbox">&nbsp;Free breakfast</a></li>
+                  <li><a href="#" class="small" data-value="option2" tabindex="-1"><input type="checkbox">&nbsp;Pool</a></li>
+                  <li><a href="#" class="small" data-value="option3" tabindex="-1"><input type="checkbox">&nbsp;Free Parking</a></li>
+                  <li><a href="#" class="small" data-value="option4" tabindex="-1"><input type="checkbox">&nbsp;Free Wifi</a></li>
+                  <li><a href="#" class="small" data-value="option5" tabindex="-1"><input type="checkbox">&nbsp;Laundry Service</a></li>
+                  <li><a href="#" class="small" data-value="option6" tabindex="-1"><input type="checkbox">&nbsp;Spa</a></li>
                 </ul>
               </div>
             </div>
@@ -87,14 +85,186 @@
         </div>
       </div>
     </div>
+   
+    <!--body-->
+    <div class="main col-xs-12 col-sm-8">
+      <h2>Hotel Results</h2>
+      <section class="hotels col-xs-12">
+        <div class="listing">
+          <div class="col-md-9">
+            <h3>Hotel London</h3>
+            <p>Basic Listing Information</p>
+            <p>Amenities:</p>
+          </div>
+          <div class="price col-md-2">$$$
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal">
+            More Info
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h4 class="modal-title">Hotel Name</h4>
+                </div>
+                <div class="modal-body">
+                  ...More detailed hotel and city info
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Hide Listing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="listing">
+          <div class="col-md-9">
+            <h3>Hotel Paris</h3>
+            <p>Basic Listing Information</p>
+            <p>Amenities:</p>
+          </div>
+          <div class="price col-md-2">$$$
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal2">
+            More Info
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h4 class="modal-title">Hotel London</h4>
+                </div>
+                <div class="modal-body">
+                  ...More detailed hotel and city info
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Hide Listing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <div class="listing">
+          <div class="col-md-9">
+            <h3>Hotel New York</h3>
+            <p>Basic Listing Information</p>
+            <p>Amenities:</p>
+          </div>
+          <div class="price col-md-2">$$$
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal3">
+            More Info
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h4 class="modal-title">Hotel Name</h4>
+                </div>
+                <div class="modal-body">
+                  ...More detailed hotel and city info
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Hide Listing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        
+        <div class="listing">
+          <div class="col-md-9">
+            <h3>Hotel Tokyo</h3>
+            <p>Basic Listing Information</p>
+            <p>Amenities:</p>
+          </div>
+          <div class="price col-md-2">$$$
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal4">
+            More Info
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h4 class="modal-title">Hotel Name</h4>
+                </div>
+                <div class="modal-body">
+                  ...More detailed hotel and city info
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Hide Listing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+        <div class="listing">
+          <div class="col-md-9">
+            <h3>Hotel Hong Kong</h3>
+            <p>Basic Listing Information</p>
+            <p>Amenities:</p>
+          </div>
+          <div class="price col-md-2">$$$
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg col-md-2" data-toggle="modal" data-target="#myModal5">
+            More Info
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h4 class="modal-title">Hotel Name</h4>
+                </div>
+                <div class="modal-body">
+                  ...More detailed hotel and city info
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Hide Listing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+    </div>
+    <!--End Modal and Listing--> 
+  </div>
   <!--10 hotels, random cities-->
-    
+
   <footer>
     <p>© 2015</p>
   </footer>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/travel.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+  <script type="text/javascript" src="js/travel.js"></script>
 </body></html>
