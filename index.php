@@ -1,1 +1,1 @@
-<?php include_once("travel.html"); ?>
+<?php include_once("home.html"); ?>

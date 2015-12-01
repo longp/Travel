@@ -33,6 +33,7 @@ $("#btnsearch").on("click", function(e){
   }else if (city === "Hong Kong"){
     $(".listing.hk").show();
   }
+
 });
 
   //amenity result
