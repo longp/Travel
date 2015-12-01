@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
   $(".btn-group2").hide();
 
   //enable popovers
@@ -18,12 +19,45 @@ $(document).ready(function(){
 
   
 
-//show search results
+//show search results 
+  //not working
+$("btnsearch").on("click", function(){
+  alert("hi");
+});
 
 
 
-
+  //amenity result
+  function amenResult () {
+  $("#op1").one("click", function(){
+    var freebf = "Free Breakfast";
+    $(".amenities").append(freebf + ", ");
   });
+  $("#op2").one("click", function(){
+    var pool = "Pool";
+    $(".amenities").append(pool + ", ");
+  });
+  $("#op3").one("click", function(){
+    var freepark = "Free Parking";
+    $(".amenities").append(freepark + ", ");
+  });
+  $("#op4").one("click", function(){
+    var freewifi = "Free Wifi";
+    $(".amenities").append(freewifi + ", ");
+  });
+  $("#op5").one("click", function(){
+    var laundry = "Laundry";
+    $(".amenities").append(laundry + ", ");
+  });
+  $("#op6").one("click", function(){
+    var spa = "Spa";
+    $(".amenities").append(spa + ", ");
+  });
+}
+
+
+
+  
 
   // $("input").on('click', function() {
   //   alert("ye");

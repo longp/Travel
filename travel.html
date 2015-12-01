@@ -138,7 +138,7 @@
               <option>Hong Kong</option>
               <option>New York City</option>
             </select>
-            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            <button id="btnsearch" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
           </form>          
         </div> 
         <div class="">
@@ -161,10 +161,11 @@
 
               <div class="btn btn-group2 btn-lg">             
                 <select>
-                  <option value="price">Price</option>                  
-                  <option value="price2">$</option>
-                  <option value="price3">$$</option>
-                  <option value="price4">$$$</option>        
+                                 
+                  <option value="price">Price</option>
+                  <option id="price1" value="price2">$</option>
+                  <option id="price2" value="price3">$$</option>
+                  <option id="price3" value="price4">$$$</option>        
                 </select>
               </div>
               
@@ -172,12 +173,12 @@
                 <button type="button" class="btn btn-default btn-sm dropdown-toggle" id="amenitites" data-toggle="dropdown">Amenities <span class="caret"></span></button>
 
                 <ul class="dropdown-menu">
-                  <li><a href="#" class="small" data-value="option1" tabindex="-1"><input type="checkbox">&nbsp;Free breakfast</a></li>
-                  <li><a href="#" class="small" data-value="option2" tabindex="-1"><input type="checkbox">&nbsp;Pool</a></li>
-                  <li><a href="#" class="small" data-value="option3" tabindex="-1"><input type="checkbox">&nbsp;Free Parking</a></li>
-                  <li><a href="#" class="small" data-value="option4" tabindex="-1"><input type="checkbox">&nbsp;Free Wifi</a></li>
-                  <li><a href="#" class="small" data-value="option5" tabindex="-1"><input type="checkbox">&nbsp;Laundry Service</a></li>
-                  <li><a href="#" class="small" data-value="option6" tabindex="-1"><input type="checkbox">&nbsp;Spa</a></li>
+                  <li><input id="op1" type="checkbox">&nbsp;Free breakfast</a></li>
+                  <li><input id="op2" type="checkbox">&nbsp;Pool</a></li>
+                  <li><input id="op3" type="checkbox">&nbsp;Free Parking</a></li>
+                  <li><input id="op4" type="checkbox">&nbsp;Free Wifi</a></li>
+                  <li><input id="op5" type="checkbox">&nbsp;Laundry Service</a></li>
+                  <li><input id="op6" type="checkbox">&nbsp;Spa</a></li>
                 </ul>
               </div>
             </div>
@@ -194,7 +195,7 @@
           <div class="col-xs-9">
             <h3>Hotel London</h3>
             <p>Basic Listing Information</p>
-            <p>Amenities:</p>
+            <p class="amenities">Amenities:</p>
           </div>
           <div class="price col-xs-3 col-md-2">$$$
           </div>
@@ -226,7 +227,7 @@
           <div class="col-xs-9">
             <h3>Hotel Paris</h3>
             <p>Basic Listing Information</p>
-            <p>Amenities:</p>
+            <p class="amenities">Amenities:</p>
           </div>
           <div class="price col-xs-3 col-md-2">$$$
           </div>
@@ -259,7 +260,7 @@
           <div class="col-xs-9">
             <h3>Hotel New York</h3>
             <p>Basic Listing Information</p>
-            <p>Amenities:</p>
+            <p class="amenities">Amenities:</p>
           </div>
           <div class="price col-xs-3 col-md-2">$$$
           </div>
@@ -292,7 +293,7 @@
           <div class="col-xs-9">
             <h3>Hotel Tokyo</h3>
             <p>Basic Listing Information</p>
-            <p>Amenities:</p>
+            <p class="amenities">Amenities:</p>
           </div>
           <div class="price col-xs-3 col-md-2">$$$
           </div>
@@ -325,7 +326,7 @@
           <div class="col-xs-9">
             <h3>Hotel Hong Kong</h3>
             <p>Basic Listing Information</p>
-            <p>Amenities:</p>
+            <p class="amenities">Amenities:</p>
           </div>
           <div class="price col-xs-3 col-md-2">$$$
           </div>
