@@ -112,6 +112,7 @@ form.dropdown {
 /*footer*/
 
 footer {
+  text-align: right;
   background-color: darkred;
   color: white;
   margin-top: 5px;
