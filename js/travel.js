@@ -20,12 +20,7 @@ $(document).ready(function(){
 
 //show search results
 
-//hide body div
 
-
-  $("#searchbtn").on("click", function(){
-    alert("hi");
-    $('#bodydiv').removeAttr(hidden);
 
 
   });
