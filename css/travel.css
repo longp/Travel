@@ -57,6 +57,14 @@ td {
   margin-top: 75px;
 }
 
+form.dropdown {
+  padding-top: 10px;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 200px;
+}
+
 .btn-lg {
   padding: 10px;
 }
