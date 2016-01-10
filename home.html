@@ -52,7 +52,7 @@
     <!-- container fluid -->
   </nav>
   <!--carousel-->
-  <div class="container">
+  <div class="container-fluid">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
@@ -106,7 +106,7 @@
             <div class="col-md-6">
               <span>Check Out</span>
               <input type="datetime-local" class="form-control" id="checkout" name="checkout">
-            </div>
+            </div>  <!-- serperte the button -->
             <form class="dropdown col-md-12">
               <select class="selectpicker" id="city" data-live-search="true" title="Search City">
                 <option>Paris</option>
@@ -148,31 +148,33 @@
               <option id="price3" value="price4">$$$</option>
             </select>
           </div>
-          <div class="btn btn-group">
-            <button type="button" class="btn btn-default btn-sm dropdown-toggle" id="amenitites" data-toggle="dropdown">
-              Amenities
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <input id="op1" type="checkbox">&nbsp;Free breakfast
-              </li>
-              <li>
-                <input id="op2" type="checkbox">&nbsp;Pool
-              </li>
-              <li>
-                <input id="op3" type="checkbox">&nbsp;Free Parking
-              </li>
-              <li>
-                <input id="op4" type="checkbox">&nbsp;Free Wifi
-              </li>
-              <li>
-                <input id="op5" type="checkbox">&nbsp;Laundry Service
-              </li>
-              <li>
-                <input id="op6" type="checkbox">&nbsp;Spa
-              </li>
-            </ul>
+          <div class="col-md-6">
+            <div class="btn btn-group">
+              <button type="button" class="btn btn-default btn-sm dropdown-toggle" id="amenitites" data-toggle="dropdown">
+                Amenities
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <input id="op1" type="checkbox">&nbsp;Free breakfast
+                </li>
+                <li>
+                  <input id="op2" type="checkbox">&nbsp;Pool
+                </li>
+                <li>
+                  <input id="op3" type="checkbox">&nbsp;Free Parking
+                </li>
+                <li>
+                  <input id="op4" type="checkbox">&nbsp;Free Wifi
+                </li>
+                <li>
+                  <input id="op5" type="checkbox">&nbsp;Laundry Service
+                </li>
+                <li>
+                  <input id="op6" type="checkbox">&nbsp;Spa
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -650,7 +652,7 @@
         </section>
       </div>
     </div>
-  </div>
+  </div> 
   <!--End Modal and Listing-->
   <footer>
     <p>Leap is a division of LongStep Travel Inc. © 2015</p>

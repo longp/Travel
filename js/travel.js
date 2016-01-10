@@ -20,14 +20,19 @@ $(document).ready(function(){
       return;
     } else if (city === "London"){
       $(".listing.ld").show();
+      $(".listing").not(".ld").hide();
     }else if (city === "Paris"){
       $(".listing.pa").show();
+      $(".listing").not(".pa").hide();
     }else if (city === "Tokyo"){
       $(".listing.tk").show();
+      $(".listing").not(".tk").hide();
     }else if (city === "New York City"){
       $(".listing.ny").show();
+      $(".listing").not(".ny").hide();
     }else if (city === "Hong Kong"){
       $(".listing.hk").show();
+      $(".listing").not(".hk").hide();
     }
   });
   //amenity result
@@ -59,8 +64,8 @@ $(document).ready(function(){
   };
   $('.selectpicker').selectpicker();
   $('.selectpicker').selectpicker({
-      style: 'btn-info',
-      size: 4
+    style: 'btn-info',
+    size: 4
   });
   // debugger;
   $(document).on("click",".modal-footer .btn-primary", function(){
@@ -69,6 +74,6 @@ $(document).ready(function(){
   });
   //show advanced search option buttons
   $("#moreOptions").on("click", function(){
-    $(".btn-group2").fadeToggle();
+  $(".btn-group2").fadeToggle();
   });
 });
