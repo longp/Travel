@@ -36,24 +36,11 @@ $(document).ready(function(){
     }
   });
   //amenity result
-  function amenResult () {
-    $("#op1").one("click", function(){
-      $(".amenities").append("Free Breakfast" + ", ");
-    });
-    $("#op2").one("click", function(){
-      $(".amenities").append("pool" + ", ");
-    });
-    $("#op3").one("click", function(){
-      $(".amenities").append("Free Parking" + ", ");
-    });
-    $("#op4").one("click", function(){
-      $(".amenities").append("Free Wifi" + ", ");
-    });
-    $("#op5").one("click", function(){
-      $(".amenities").append("Laundry"+ ", ");
-    });
-    $("#op6").one("click", function(){
-      $(".amenities").append("spa" + ", ");
+  function amenResult() {
+    $(".amenitiesOptions li input").on("click", function(){
+      var amenitiesVal = $(this).val();
+      console.log(amenitiesVal)
+      $(".amenities").append(amenitiesVal + ", ");
     });
   };
   $('.selectpicker').selectpicker();
