@@ -38,28 +38,22 @@ $(document).ready(function(){
   //amenity result
   function amenResult () {
     $("#op1").one("click", function(){
-      var freebf = "Free Breakfast";
-      $(".amenities").append(freebf + ", ");
+      $(".amenities").append("Free Breakfast" + ", ");
     });
     $("#op2").one("click", function(){
-      var pool = "Pool";
-      $(".amenities").append(pool + ", ");
+      $(".amenities").append("pool" + ", ");
     });
     $("#op3").one("click", function(){
-      var freepark = "Free Parking";
-      $(".amenities").append(freepark + ", ");
+      $(".amenities").append("Free Parking" + ", ");
     });
     $("#op4").one("click", function(){
-      var freewifi = "Free Wifi";
-      $(".amenities").append(freewifi + ", ");
+      $(".amenities").append("Free Wifi" + ", ");
     });
     $("#op5").one("click", function(){
-      var laundry = "Laundry";
-      $(".amenities").append(laundry + ", ");
+      $(".amenities").append("Laundry"+ ", ");
     });
     $("#op6").one("click", function(){
-      var spa = "Spa";
-      $(".amenities").append(spa + ", ");
+      $(".amenities").append("spa" + ", ");
     });
   };
   $('.selectpicker').selectpicker();
