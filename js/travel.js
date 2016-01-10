@@ -3,7 +3,7 @@ $(document).ready(function(){
   $(".listing").hide();
   $(".alert").hide();
   //enable popovers
-  $(function () {
+  $(function popOver(){
     $('[data-toggle="popover"]').popover();
   });
   //carousel interval
@@ -39,10 +39,9 @@ $(document).ready(function(){
   function amenResult() {
     $(".amenitiesOptions li input").on("click", function(){
       var amenitiesVal = $(this).val();
-      console.log(amenitiesVal)
       $(".amenities").append(amenitiesVal + ", ");
     });
-  };
+  }
   $('.selectpicker').selectpicker();
   $('.selectpicker').selectpicker({
     style: 'btn-info',
