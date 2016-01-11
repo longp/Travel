@@ -10,7 +10,7 @@ $(document).ready(function(){
   $('.carousel').carousel({
     interval: 3000
   });
-//show search results 
+  //show search results 
   $("#btnsearch").on("click", function(e){
     e.preventDefault();
     amenResult();
