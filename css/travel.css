@@ -1,26 +1,27 @@
-
-body{
-
+#elieApproval{
+  height:100px;
+  width: 50px;
 }
-
-
+#approved{
+    position: fixed;
+    bottom: 0px;
+    left: 0px; 
+}
+#approvedBy{
+    top: 400px;
+    left: -150%; 
+}
 /*navbar*/
 .navbar {
   background-color: darkred;
   margin-bottom: -10px;
 }
-
 .navlink, .navbar-default .navbar-nav>li>a {
   color: white;
 }
-
 .navlink:hover, .navlinkwhite{
   color: teal;
 }
-
-
-
-
 /*carousel*/
 img
 {
@@ -34,16 +35,13 @@ img
   font-size: 2em;
   text-shadow:1px 1px teal;
 }
-
 .carousel{
   margin-top: 10px;
 }
-
 /*body*/
 td {
   height: 100px;
 }
-
 /*search panel*/
 .panel {
   padding-bottom: 200px;
@@ -51,49 +49,37 @@ td {
 .panel-body {
   padding-bottom: 0;
 }
-
-
 #searchbar {
   margin-top: 75px;
 }
-
 form.dropdown {
   padding-top: 10px;
 }
-
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
   width: 200px;
 }
-
 .btn-lg {
   padding: 10px;
 }
-
 #amenities {
   border-radius: 10px;
 }
-
-/*panel*/
-
 /*main*/
 .main h2 {
   text-decoration: underline;
   text-align: center;
   color: darkred;
 }
-
 .main h3 {
   margin-top: 0;
 }
 .hotels, .listing {
   overflow: hidden;
 }
-
 .listing {
   padding-top: 10px;
   border-bottom: 1px darkred solid;
 }
-
 .listing:last-child {
   border-bottom: none;
 }
@@ -104,13 +90,10 @@ form.dropdown {
   padding: 0;
   padding-left: 20px;
 }
-
 #moreOptions:hover, #moreOptions:focus {
   text-decoration: none;
 }
-
 /*footer*/
-
 footer {
   text-align: right;
   background-color: darkred;
@@ -121,6 +104,3 @@ footer {
   height:30px;
   width:100%;
 }
-
-
-
